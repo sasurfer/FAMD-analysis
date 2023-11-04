@@ -362,7 +362,7 @@
 
     
     \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{45}{\boxspacing}
+\prompt{In}{incolor}{1}{\boxspacing}
 \begin{Verbatim}[commandchars=\\\{\}]
 \PY{c+c1}{\PYZsh{}package prince https://github.com/MaxHalford/prince}
 \PY{c+c1}{\PYZsh{}FAMD Factor Analysis of Mixed Data}
@@ -371,7 +371,7 @@
 \end{tcolorbox}
 
     \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{4}{\boxspacing}
+\prompt{In}{incolor}{1}{\boxspacing}
 \begin{Verbatim}[commandchars=\\\{\}]
 \PY{c+c1}{\PYZsh{}Importing the necessary package}
 \PY{k+kn}{import} \PY{n+nn}{math}
@@ -383,7 +383,7 @@
 \end{tcolorbox}
 
     \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{5}{\boxspacing}
+\prompt{In}{incolor}{2}{\boxspacing}
 \begin{Verbatim}[commandchars=\\\{\}]
 \PY{n}{df}\PY{o}{=}\PY{n}{df}\PY{o}{.}\PY{n}{set\PYZus{}index}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{CDR\PYZus{}name}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
 \PY{n}{df}\PY{o}{.}\PY{n}{drop}\PY{p}{(}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{commercial}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{opensource}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,}\PY{n}{axis}\PY{o}{=}\PY{l+m+mi}{1}\PY{p}{,}\PY{n}{inplace}\PY{o}{=}\PY{k+kc}{True}\PY{p}{)}
@@ -392,7 +392,7 @@
 \end{tcolorbox}
 
             \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
-\prompt{Out}{outcolor}{5}{\boxspacing}
+\prompt{Out}{outcolor}{2}{\boxspacing}
 \begin{Verbatim}[commandchars=\\\{\}]
          rest\_api another\_api gui  api\_n  gui\_n aql sql  json\_xml  \textbackslash{}
 CDR\_name
@@ -425,7 +425,7 @@ ehrn                1       1                 1            0           1
 \end{tcolorbox}
         
     \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{6}{\boxspacing}
+\prompt{In}{incolor}{3}{\boxspacing}
 \begin{Verbatim}[commandchars=\\\{\}]
 \PY{n}{famd} \PY{o}{=} \PY{n}{FAMD}\PY{p}{(}\PY{n}{n\PYZus{}components} \PY{o}{=} \PY{l+m+mi}{2}\PY{p}{,} \PY{n}{n\PYZus{}iter} \PY{o}{=} \PY{l+m+mi}{3}\PY{p}{,} \PY{n}{random\PYZus{}state} \PY{o}{=} \PY{l+m+mi}{101}\PY{p}{,}\PY{n}{engine}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{sklearn}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}
 \PY{n}{famd}\PY{o}{=}\PY{n}{famd}\PY{o}{.}\PY{n}{fit}\PY{p}{(}\PY{n}{df}\PY{p}{)}
@@ -435,7 +435,7 @@ ehrn                1       1                 1            0           1
 \end{tcolorbox}
 
             \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
-\prompt{Out}{outcolor}{6}{\boxspacing}
+\prompt{Out}{outcolor}{3}{\boxspacing}
 \begin{Verbatim}[commandchars=\\\{\}]
                  0         1
 CDR\_name
@@ -454,49 +454,49 @@ ehrn      0.957130 -0.617726
 \end{tcolorbox}
         
     \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{7}{\boxspacing}
+\prompt{In}{incolor}{4}{\boxspacing}
 \begin{Verbatim}[commandchars=\\\{\}]
 \PY{n}{famd}\PY{o}{.}\PY{n}{explained\PYZus{}inertia\PYZus{}} \PY{c+c1}{\PYZsh{}variance explained}
 \end{Verbatim}
 \end{tcolorbox}
 
             \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
-\prompt{Out}{outcolor}{7}{\boxspacing}
+\prompt{Out}{outcolor}{4}{\boxspacing}
 \begin{Verbatim}[commandchars=\\\{\}]
 array([0.34520031, 0.20760006])
 \end{Verbatim}
 \end{tcolorbox}
         
     \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{8}{\boxspacing}
+\prompt{In}{incolor}{5}{\boxspacing}
 \begin{Verbatim}[commandchars=\\\{\}]
 \PY{n+nb}{round}\PY{p}{(}\PY{n+nb}{sum}\PY{p}{(}\PY{n}{famd}\PY{o}{.}\PY{n}{explained\PYZus{}inertia\PYZus{}}\PY{p}{)}\PY{o}{*}\PY{l+m+mi}{100}\PY{p}{,}\PY{l+m+mi}{1}\PY{p}{)}
 \end{Verbatim}
 \end{tcolorbox}
 
             \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
-\prompt{Out}{outcolor}{8}{\boxspacing}
+\prompt{Out}{outcolor}{5}{\boxspacing}
 \begin{Verbatim}[commandchars=\\\{\}]
 55.3
 \end{Verbatim}
 \end{tcolorbox}
         
     \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{9}{\boxspacing}
+\prompt{In}{incolor}{6}{\boxspacing}
 \begin{Verbatim}[commandchars=\\\{\}]
 \PY{n}{famd}\PY{o}{.}\PY{n}{eigenvalues\PYZus{}}
 \end{Verbatim}
 \end{tcolorbox}
 
             \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
-\prompt{Out}{outcolor}{9}{\boxspacing}
+\prompt{Out}{outcolor}{6}{\boxspacing}
 \begin{Verbatim}[commandchars=\\\{\}]
 array([0.14130948, 0.08498213])
 \end{Verbatim}
 \end{tcolorbox}
         
     \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{10}{\boxspacing}
+\prompt{In}{incolor}{7}{\boxspacing}
 \begin{Verbatim}[commandchars=\\\{\}]
 \PY{k+kn}{import} \PY{n+nn}{plotly}\PY{n+nn}{.}\PY{n+nn}{express} \PY{k}{as} \PY{n+nn}{px}
 \PY{n}{fig}\PY{o}{=}\PY{n}{px}\PY{o}{.}\PY{n}{scatter}\PY{p}{(}\PY{n}{df\PYZus{}famd}\PY{p}{,}\PY{n}{x}\PY{o}{=}\PY{l+m+mi}{0}\PY{p}{,}\PY{n}{y}\PY{o}{=}\PY{l+m+mi}{1}\PY{p}{,}\PY{n}{color}\PY{o}{=}\PY{n}{df}\PY{o}{.}\PY{n}{index}\PY{p}{)}
@@ -509,7 +509,7 @@ array([0.14130948, 0.08498213])
     
     
     \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{11}{\boxspacing}
+\prompt{In}{incolor}{8}{\boxspacing}
 \begin{Verbatim}[commandchars=\\\{\}]
 \PY{n}{famd} \PY{o}{=} \PY{n}{FAMD}\PY{p}{(}\PY{n}{n\PYZus{}components} \PY{o}{=} \PY{l+m+mi}{3}\PY{p}{,} \PY{n}{n\PYZus{}iter} \PY{o}{=} \PY{l+m+mi}{3}\PY{p}{,} \PY{n}{random\PYZus{}state} \PY{o}{=} \PY{l+m+mi}{101}\PY{p}{,}\PY{n}{engine}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{sklearn}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}
 \PY{n}{famd} \PY{o}{=} \PY{n}{famd}\PY{o}{.}\PY{n}{fit}\PY{p}{(}\PY{n}{df}\PY{p}{)}
@@ -519,7 +519,7 @@ array([0.14130948, 0.08498213])
 \end{tcolorbox}
 
             \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
-\prompt{Out}{outcolor}{11}{\boxspacing}
+\prompt{Out}{outcolor}{8}{\boxspacing}
 \begin{Verbatim}[commandchars=\\\{\}]
                  0         1         2
 CDR\_name
@@ -538,56 +538,56 @@ ehrn      0.957130 -0.617726 -0.033051
 \end{tcolorbox}
         
     \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{12}{\boxspacing}
+\prompt{In}{incolor}{9}{\boxspacing}
 \begin{Verbatim}[commandchars=\\\{\}]
 \PY{n}{famd}\PY{o}{.}\PY{n}{explained\PYZus{}inertia\PYZus{}} \PY{c+c1}{\PYZsh{}variance explained}
 \end{Verbatim}
 \end{tcolorbox}
 
             \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
-\prompt{Out}{outcolor}{12}{\boxspacing}
+\prompt{Out}{outcolor}{9}{\boxspacing}
 \begin{Verbatim}[commandchars=\\\{\}]
 array([0.34520031, 0.20760006, 0.15088997])
 \end{Verbatim}
 \end{tcolorbox}
         
     \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{13}{\boxspacing}
+\prompt{In}{incolor}{10}{\boxspacing}
 \begin{Verbatim}[commandchars=\\\{\}]
 \PY{n+nb}{round}\PY{p}{(}\PY{n+nb}{sum}\PY{p}{(}\PY{n}{famd}\PY{o}{.}\PY{n}{explained\PYZus{}inertia\PYZus{}}\PY{p}{)}\PY{o}{*}\PY{l+m+mi}{100}\PY{p}{,}\PY{l+m+mi}{1}\PY{p}{)}
 \end{Verbatim}
 \end{tcolorbox}
 
             \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
-\prompt{Out}{outcolor}{13}{\boxspacing}
+\prompt{Out}{outcolor}{10}{\boxspacing}
 \begin{Verbatim}[commandchars=\\\{\}]
 70.4
 \end{Verbatim}
 \end{tcolorbox}
         
     \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{14}{\boxspacing}
+\prompt{In}{incolor}{11}{\boxspacing}
 \begin{Verbatim}[commandchars=\\\{\}]
 \PY{n}{famd}\PY{o}{.}\PY{n}{eigenvalues\PYZus{}}
 \end{Verbatim}
 \end{tcolorbox}
 
             \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
-\prompt{Out}{outcolor}{14}{\boxspacing}
+\prompt{Out}{outcolor}{11}{\boxspacing}
 \begin{Verbatim}[commandchars=\\\{\}]
 array([0.14130948, 0.08498213, 0.06176757])
 \end{Verbatim}
 \end{tcolorbox}
         
     \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{15}{\boxspacing}
+\prompt{In}{incolor}{12}{\boxspacing}
 \begin{Verbatim}[commandchars=\\\{\}]
 \PY{n}{famd}\PY{o}{.}\PY{n}{row\PYZus{}coordinates}\PY{p}{(}\PY{n}{df}\PY{p}{)}
 \end{Verbatim}
 \end{tcolorbox}
 
             \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
-\prompt{Out}{outcolor}{15}{\boxspacing}
+\prompt{Out}{outcolor}{12}{\boxspacing}
 \begin{Verbatim}[commandchars=\\\{\}]
                  0         1         2
 CDR\_name
@@ -606,7 +606,7 @@ ehrn      0.957130 -0.617726 -0.033051
 \end{tcolorbox}
         
     \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{19}{\boxspacing}
+\prompt{In}{incolor}{13}{\boxspacing}
 \begin{Verbatim}[commandchars=\\\{\}]
 \PY{o}{\PYZpc{}}\PY{k}{matplotlib} notebook
 \PY{k+kn}{import} \PY{n+nn}{matplotlib}\PY{n+nn}{.}\PY{n+nn}{pyplot} \PY{k}{as} \PY{n+nn}{plt}
@@ -631,23 +631,29 @@ ehrn      0.957130 -0.617726 -0.033051
 \PY{n}{nloc}\PY{o}{=}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}\PY{o}{*}\PY{n+nb}{len}\PY{p}{(}\PY{n}{df\PYZus{}famd}\PY{p}{)}
 \PY{k}{for} \PY{n}{i} \PY{o+ow}{in} \PY{n+nb}{range}\PY{p}{(}\PY{n+nb}{len}\PY{p}{(}\PY{n}{df\PYZus{}famd}\PY{p}{)}\PY{p}{)}\PY{p}{:} \PY{c+c1}{\PYZsh{}plot each point + its index as text above}
     \PY{n}{ax}\PY{o}{.}\PY{n}{scatter}\PY{p}{(}\PY{n}{df\PYZus{}famd}\PY{o}{.}\PY{n}{iloc}\PY{p}{[}\PY{n}{i}\PY{p}{,}\PY{l+m+mi}{0}\PY{p}{]}\PY{p}{,}\PY{n}{df\PYZus{}famd}\PY{o}{.}\PY{n}{iloc}\PY{p}{[}\PY{n}{i}\PY{p}{,}\PY{l+m+mi}{1}\PY{p}{]}\PY{p}{,}\PY{n}{df\PYZus{}famd}\PY{o}{.}\PY{n}{iloc}\PY{p}{[}\PY{n}{i}\PY{p}{,}\PY{l+m+mi}{2}\PY{p}{]}\PY{p}{,}\PY{n}{color}\PY{o}{=}\PY{n}{mycolors}\PY{p}{[}\PY{n}{i}\PY{p}{]}\PY{p}{,}\PY{n}{marker}\PY{o}{=}\PY{n}{mymarkers}\PY{p}{[}\PY{n}{i}\PY{p}{]}\PY{p}{)} 
-    \PY{k}{if} \PY{p}{[}\PY{n}{df\PYZus{}famd}\PY{o}{.}\PY{n}{iloc}\PY{p}{[}\PY{n}{i}\PY{p}{,}\PY{l+m+mi}{0}\PY{p}{]}\PY{p}{,}\PY{n}{df\PYZus{}famd}\PY{o}{.}\PY{n}{iloc}\PY{p}{[}\PY{n}{i}\PY{p}{,}\PY{l+m+mi}{1}\PY{p}{]}\PY{p}{,}\PY{n}{df\PYZus{}famd}\PY{o}{.}\PY{n}{iloc}\PY{p}{[}\PY{n}{i}\PY{p}{,}\PY{l+m+mi}{2}\PY{p}{]}\PY{p}{]} \PY{o+ow}{in} \PY{n}{listofloc}\PY{p}{:}
-        \PY{n}{nloc}\PY{p}{[}\PY{n}{listofloc}\PY{o}{.}\PY{n}{index}\PY{p}{(}\PY{p}{[}\PY{n}{df\PYZus{}famd}\PY{o}{.}\PY{n}{iloc}\PY{p}{[}\PY{n}{i}\PY{p}{,}\PY{l+m+mi}{0}\PY{p}{]}\PY{p}{,}\PY{n}{df\PYZus{}famd}\PY{o}{.}\PY{n}{iloc}\PY{p}{[}\PY{n}{i}\PY{p}{,}\PY{l+m+mi}{1}\PY{p}{]}\PY{p}{,}\PY{n}{df\PYZus{}famd}\PY{o}{.}\PY{n}{iloc}\PY{p}{[}\PY{n}{i}\PY{p}{,}\PY{l+m+mi}{2}\PY{p}{]}\PY{p}{]}\PY{p}{)}\PY{p}{]}\PY{o}{+}\PY{o}{=}\PY{l+m+mi}{1}
-        \PY{n}{pad}\PY{o}{=}\PY{l+m+mf}{0.12}\PY{o}{*}\PY{p}{(}\PY{n}{nloc}\PY{p}{[}\PY{n}{listofloc}\PY{o}{.}\PY{n}{index}\PY{p}{(}\PY{p}{[}\PY{n}{df\PYZus{}famd}\PY{o}{.}\PY{n}{iloc}\PY{p}{[}\PY{n}{i}\PY{p}{,}\PY{l+m+mi}{0}\PY{p}{]}\PY{p}{,}\PY{n}{df\PYZus{}famd}\PY{o}{.}\PY{n}{iloc}\PY{p}{[}\PY{n}{i}\PY{p}{,}\PY{l+m+mi}{1}\PY{p}{]}\PY{p}{,}\PY{n}{df\PYZus{}famd}\PY{o}{.}\PY{n}{iloc}\PY{p}{[}\PY{n}{i}\PY{p}{,}\PY{l+m+mi}{2}\PY{p}{]}\PY{p}{]}\PY{p}{)}\PY{p}{]}\PY{o}{\PYZhy{}}\PY{l+m+mi}{1}\PY{p}{)}
-    \PY{k}{else}\PY{p}{:}
-        \PY{n}{listofloc}\PY{o}{.}\PY{n}{append}\PY{p}{(}\PY{p}{[}\PY{n}{df\PYZus{}famd}\PY{o}{.}\PY{n}{iloc}\PY{p}{[}\PY{n}{i}\PY{p}{,}\PY{l+m+mi}{0}\PY{p}{]}\PY{p}{,}\PY{n}{df\PYZus{}famd}\PY{o}{.}\PY{n}{iloc}\PY{p}{[}\PY{n}{i}\PY{p}{,}\PY{l+m+mi}{1}\PY{p}{]}\PY{p}{,}\PY{n}{df\PYZus{}famd}\PY{o}{.}\PY{n}{iloc}\PY{p}{[}\PY{n}{i}\PY{p}{,}\PY{l+m+mi}{2}\PY{p}{]}\PY{p}{]}\PY{p}{)}
-        \PY{n}{nloc}\PY{p}{[}\PY{n}{listofloc}\PY{o}{.}\PY{n}{index}\PY{p}{(}\PY{p}{[}\PY{n}{df\PYZus{}famd}\PY{o}{.}\PY{n}{iloc}\PY{p}{[}\PY{n}{i}\PY{p}{,}\PY{l+m+mi}{0}\PY{p}{]}\PY{p}{,}\PY{n}{df\PYZus{}famd}\PY{o}{.}\PY{n}{iloc}\PY{p}{[}\PY{n}{i}\PY{p}{,}\PY{l+m+mi}{1}\PY{p}{]}\PY{p}{,}\PY{n}{df\PYZus{}famd}\PY{o}{.}\PY{n}{iloc}\PY{p}{[}\PY{n}{i}\PY{p}{,}\PY{l+m+mi}{2}\PY{p}{]}\PY{p}{]}\PY{p}{)}\PY{p}{]}\PY{o}{=}\PY{l+m+mi}{1}
-        \PY{n}{pad}\PY{o}{=}\PY{l+m+mi}{0}
-    \PY{n}{ax}\PY{o}{.}\PY{n}{text}\PY{p}{(}\PY{n}{df\PYZus{}famd}\PY{o}{.}\PY{n}{iloc}\PY{p}{[}\PY{n}{i}\PY{p}{,}\PY{l+m+mi}{0}\PY{p}{]}\PY{p}{,}\PY{n}{df\PYZus{}famd}\PY{o}{.}\PY{n}{iloc}\PY{p}{[}\PY{n}{i}\PY{p}{,}\PY{l+m+mi}{1}\PY{p}{]}\PY{p}{,}\PY{n}{df\PYZus{}famd}\PY{o}{.}\PY{n}{iloc}\PY{p}{[}\PY{n}{i}\PY{p}{,}\PY{l+m+mi}{2}\PY{p}{]}\PY{o}{+}\PY{n}{pad}\PY{p}{,}  \PY{l+s+s1}{\PYZsq{}}\PY{l+s+si}{\PYZpc{}s}\PY{l+s+s1}{\PYZsq{}} \PY{o}{\PYZpc{}} \PY{p}{(}\PY{n}{df}\PY{o}{.}\PY{n}{index}\PY{p}{[}\PY{n}{i}\PY{p}{]}\PY{p}{)}\PY{p}{,} \PY{n}{size}\PY{o}{=}\PY{l+m+mi}{13}\PY{p}{,} \PY{n}{zorder}\PY{o}{=}\PY{l+m+mi}{1}\PY{p}{,}  
+\PY{c+c1}{\PYZsh{}     if [df\PYZus{}famd.iloc[i,0],df\PYZus{}famd.iloc[i,1],df\PYZus{}famd.iloc[i,2]] in listofloc:}
+\PY{c+c1}{\PYZsh{}         nloc[listofloc.index([df\PYZus{}famd.iloc[i,0],df\PYZus{}famd.iloc[i,1],df\PYZus{}famd.iloc[i,2]])]+=1}
+\PY{c+c1}{\PYZsh{}         pad=0.12*(nloc[listofloc.index([df\PYZus{}famd.iloc[i,0],df\PYZus{}famd.iloc[i,1],df\PYZus{}famd.iloc[i,2]])]\PYZhy{}1)}
+\PY{c+c1}{\PYZsh{}     else:}
+\PY{c+c1}{\PYZsh{}         listofloc.append([df\PYZus{}famd.iloc[i,0],df\PYZus{}famd.iloc[i,1],df\PYZus{}famd.iloc[i,2]])}
+\PY{c+c1}{\PYZsh{}         nloc[listofloc.index([df\PYZus{}famd.iloc[i,0],df\PYZus{}famd.iloc[i,1],df\PYZus{}famd.iloc[i,2]])]=1}
+\PY{c+c1}{\PYZsh{}         pad=0}
+    \PY{n}{pad}\PY{o}{=}\PY{l+m+mi}{0}
+    \PY{n}{delta0}\PY{o}{=}\PY{l+m+mi}{0}
+    \PY{n}{delta1}\PY{o}{=}\PY{l+m+mf}{0.05}
+    \PY{n}{delta2}\PY{o}{=}\PY{o}{\PYZhy{}}\PY{l+m+mf}{0.10}
+    \PY{n}{ax}\PY{o}{.}\PY{n}{text}\PY{p}{(}\PY{n}{df\PYZus{}famd}\PY{o}{.}\PY{n}{iloc}\PY{p}{[}\PY{n}{i}\PY{p}{,}\PY{l+m+mi}{0}\PY{p}{]}\PY{o}{+}\PY{n}{delta0}\PY{p}{,}\PY{n}{df\PYZus{}famd}\PY{o}{.}\PY{n}{iloc}\PY{p}{[}\PY{n}{i}\PY{p}{,}\PY{l+m+mi}{1}\PY{p}{]}\PY{o}{+}\PY{n}{delta1}\PY{p}{,}\PY{n}{df\PYZus{}famd}\PY{o}{.}\PY{n}{iloc}\PY{p}{[}\PY{n}{i}\PY{p}{,}\PY{l+m+mi}{2}\PY{p}{]}\PY{o}{+}\PY{n}{pad}\PY{o}{+}\PY{n}{delta2}\PY{p}{,}  \PY{l+s+s1}{\PYZsq{}}\PY{l+s+si}{\PYZpc{}s}\PY{l+s+s1}{\PYZsq{}} \PY{o}{\PYZpc{}} \PY{p}{(}\PY{n}{df}\PY{o}{.}\PY{n}{index}\PY{p}{[}\PY{n}{i}\PY{p}{]}\PY{p}{)}\PY{p}{,} \PY{n}{size}\PY{o}{=}\PY{l+m+mi}{9}\PY{p}{,} \PY{n}{zorder}\PY{o}{=}\PY{l+m+mi}{1}\PY{p}{,}  
     \PY{n}{color}\PY{o}{=}\PY{n}{mycolors}\PY{p}{[}\PY{n}{i}\PY{p}{]}\PY{p}{)} 
     
 
 \PY{n}{ax}\PY{o}{.}\PY{n}{set\PYZus{}xlabel}\PY{p}{(}\PY{l+s+sa}{f}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{component 0 }\PY{l+s+si}{\PYZob{}}\PY{n+nb}{round}\PY{p}{(}\PY{n}{famd}\PY{o}{.}\PY{n}{explained\PYZus{}inertia\PYZus{}}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}\PY{o}{*}\PY{l+m+mi}{100}\PY{p}{,}\PY{l+m+mi}{1}\PY{p}{)}\PY{l+s+si}{\PYZcb{}}\PY{l+s+s1}{\PYZpc{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{fontsize}\PY{o}{=}\PY{l+m+mi}{14}\PY{p}{)}
 \PY{n}{ax}\PY{o}{.}\PY{n}{set\PYZus{}ylabel}\PY{p}{(}\PY{l+s+sa}{f}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{component 1 }\PY{l+s+si}{\PYZob{}}\PY{n+nb}{round}\PY{p}{(}\PY{n}{famd}\PY{o}{.}\PY{n}{explained\PYZus{}inertia\PYZus{}}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{]}\PY{o}{*}\PY{l+m+mi}{100}\PY{p}{,}\PY{l+m+mi}{1}\PY{p}{)}\PY{l+s+si}{\PYZcb{}}\PY{l+s+s1}{\PYZpc{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{fontsize}\PY{o}{=}\PY{l+m+mi}{14}\PY{p}{)}
 \PY{n}{ax}\PY{o}{.}\PY{n}{set\PYZus{}zlabel}\PY{p}{(}\PY{l+s+sa}{f}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{component 2 }\PY{l+s+si}{\PYZob{}}\PY{n+nb}{round}\PY{p}{(}\PY{n}{famd}\PY{o}{.}\PY{n}{explained\PYZus{}inertia\PYZus{}}\PY{p}{[}\PY{l+m+mi}{2}\PY{p}{]}\PY{o}{*}\PY{l+m+mi}{100}\PY{p}{,}\PY{l+m+mi}{1}\PY{p}{)}\PY{l+s+si}{\PYZcb{}}\PY{l+s+s1}{\PYZpc{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{fontsize}\PY{o}{=}\PY{l+m+mi}{14}\PY{p}{)}
-
+\PY{n}{ax}\PY{o}{.}\PY{n}{view\PYZus{}init}\PY{p}{(}\PY{l+m+mf}{30.}\PY{p}{,} \PY{o}{\PYZhy{}}\PY{l+m+mf}{35.}\PY{p}{)}
 
 \PY{n}{plt}\PY{o}{.}\PY{n}{show}\PY{p}{(}\PY{p}{)}
+\PY{c+c1}{\PYZsh{} plt.savefig(\PYZsq{}DimensionsReductionWithFAMD\PYZus{}1000dpi.pdf\PYZsq{},dpi=1000,format=\PYZsq{}pdf\PYZsq{})}
+\PY{c+c1}{\PYZsh{} plt.savefig(\PYZsq{}DimensionsReductionWithFAMD\PYZus{}1000dpi.tiff\PYZsq{},dpi=1000,format=\PYZsq{}tiff\PYZsq{})}
 \end{Verbatim}
 \end{tcolorbox}
 
@@ -664,42 +670,74 @@ ehrn      0.957130 -0.617726 -0.033051
 
     
     \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{20}{\boxspacing}
+\prompt{In}{incolor}{65}{\boxspacing}
 \begin{Verbatim}[commandchars=\\\{\}]
 \PY{k+kn}{import} \PY{n+nn}{plotly}\PY{n+nn}{.}\PY{n+nn}{express} \PY{k}{as} \PY{n+nn}{px}
+
+\PY{k+kn}{import} \PY{n+nn}{plotly}\PY{n+nn}{.}\PY{n+nn}{graph\PYZus{}objects} \PY{k}{as} \PY{n+nn}{go}
+\PY{k+kn}{from} \PY{n+nn}{plotly}\PY{n+nn}{.}\PY{n+nn}{validators}\PY{n+nn}{.}\PY{n+nn}{scatter}\PY{n+nn}{.}\PY{n+nn}{marker} \PY{k+kn}{import} \PY{n}{SymbolValidator}
+
+\PY{n}{raw\PYZus{}symbol} \PY{o}{=} \PY{n}{SymbolValidator}\PY{p}{(}\PY{p}{)}\PY{o}{.}\PY{n}{values}
+
 \PY{n}{labels} \PY{o}{=} \PY{p}{\PYZob{}}
     \PY{n+nb}{str}\PY{p}{(}\PY{n}{i}\PY{p}{)}\PY{p}{:} \PY{l+s+sa}{f}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Comp }\PY{l+s+si}{\PYZob{}}\PY{n}{i}\PY{o}{+}\PY{l+m+mi}{1}\PY{l+s+si}{\PYZcb{}}\PY{l+s+s2}{ (}\PY{l+s+si}{\PYZob{}}\PY{n}{var}\PY{l+s+si}{:}\PY{l+s+s2}{.1f}\PY{l+s+si}{\PYZcb{}}\PY{l+s+s2}{\PYZpc{})}\PY{l+s+s2}{\PYZdq{}}
     \PY{k}{for} \PY{n}{i}\PY{p}{,} \PY{n}{var} \PY{o+ow}{in} \PY{n+nb}{enumerate}\PY{p}{(}\PY{n}{famd}\PY{o}{.}\PY{n}{explained\PYZus{}inertia\PYZus{}} \PY{o}{*} \PY{l+m+mi}{100}\PY{p}{)}
 \PY{p}{\PYZcb{}}
-\PY{n}{mycolors}\PY{o}{=}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{red}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{red}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{blue}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{blue}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{red}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{black}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{red}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{green}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{red}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{green}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{red}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}
+\PY{c+c1}{\PYZsh{}mycolors=[\PYZsq{}red\PYZsq{},\PYZsq{}red\PYZsq{},\PYZsq{}blue\PYZsq{},\PYZsq{}blue\PYZsq{},\PYZsq{}red\PYZsq{},\PYZsq{}black\PYZsq{},\PYZsq{}red\PYZsq{},\PYZsq{}green\PYZsq{},\PYZsq{}red\PYZsq{},\PYZsq{}green\PYZsq{},\PYZsq{}red\PYZsq{}]}
 \PY{c+c1}{\PYZsh{}mycolors=[0,0,1,1,0,2,0,3,0,3,0]}
 \PY{n}{mymarkers}\PY{o}{=}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{circle}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{circle}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{square}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{square}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{circle}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{triangle\PYZhy{}down}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{circle}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{triangle\PYZhy{}up}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{circle}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{triangle\PYZhy{}up}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{circle}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}
 \PY{c+c1}{\PYZsh{}mymarkers=[\PYZsq{} \PYZsq{},\PYZsq{} \PYZsq{},\PYZsq{}\PYZsq{},\PYZsq{}\PYZsq{},\PYZsq{} \PYZsq{},\PYZsq{}\PYZus{}\PYZsq{},\PYZsq{} \PYZsq{},\PYZsq{}\PYZhy{}\PYZsq{},\PYZsq{} \PYZsq{},\PYZsq{}\PYZhy{}\PYZsq{},\PYZsq{} \PYZsq{}]}
 \PY{n}{mycolors}\PY{o}{=}\PY{n}{df\PYZus{}famd}\PY{o}{.}\PY{n}{index}
 \PY{n}{mysymbols}\PY{o}{=}\PY{n}{df\PYZus{}famd}\PY{o}{.}\PY{n}{index}
+\PY{c+c1}{\PYZsh{}mysymbols=[0,3,9,15,18,21,24,27,33,36,39]}
 \PY{n}{mycolor\PYZus{}discrete\PYZus{}map}\PY{o}{=}\PY{p}{\PYZob{}}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{ehrbase}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{red}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{better}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{red}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{base24}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{blue}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{cabo}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{blue}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{arenaehr}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{red}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}
                     \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{eweave}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{black}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{ehrcare}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{red}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{clever}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{green}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{ehrdb}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{red}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{rhp}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{green}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{ehrn}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{red}\PY{l+s+s1}{\PYZsq{}}\PY{p}{\PYZcb{}}
-\PY{n}{mysymbol\PYZus{}map}\PY{o}{=}\PY{p}{\PYZob{}}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{ehrbase}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{circle}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{better}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{circle}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{base24}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{square}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{cabo}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{square}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{arenaehr}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{circle}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}
-                    \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{eweave}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{triangle\PYZhy{}down}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{ehrcare}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{circle}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{clever}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{triangle\PYZhy{}up}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{ehrdb}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{circle}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}
-              \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{rhp}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{triangle\PYZhy{}up}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{ehrn}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{circle}\PY{l+s+s1}{\PYZsq{}}\PY{p}{\PYZcb{}}
+\PY{c+c1}{\PYZsh{} mysymbol\PYZus{}map=\PYZob{}\PYZsq{}ehrbase\PYZsq{}:\PYZsq{}circle\PYZsq{},\PYZsq{}better\PYZsq{}:\PYZsq{}circle\PYZsq{},\PYZsq{}base24\PYZsq{}:\PYZsq{}square\PYZsq{},\PYZsq{}cabo\PYZsq{}:\PYZsq{}square\PYZsq{},\PYZsq{}arenaehr\PYZsq{}:\PYZsq{}circle\PYZsq{},}
+\PY{c+c1}{\PYZsh{}                     \PYZsq{}eweave\PYZsq{}:\PYZsq{}triangle\PYZhy{}down\PYZsq{},\PYZsq{}ehrcare\PYZsq{}:\PYZsq{}circle\PYZsq{},\PYZsq{}clever\PYZsq{}:\PYZsq{}triangle\PYZhy{}up\PYZsq{},\PYZsq{}ehrdb\PYZsq{}:\PYZsq{}circle\PYZsq{},}
+\PY{c+c1}{\PYZsh{}               \PYZsq{}rhp\PYZsq{}:\PYZsq{}triangle\PYZhy{}up\PYZsq{},\PYZsq{}ehrn\PYZsq{}:\PYZsq{}circle\PYZsq{}\PYZcb{}}
+\PY{n}{mysymbol\PYZus{}map}\PY{o}{=}\PY{p}{\PYZob{}}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{ehrbase}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:}\PY{n}{raw\PYZus{}symbol}\PY{p}{[}\PY{l+m+mi}{0}\PY{o}{*}\PY{l+m+mi}{3}\PY{p}{]}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{better}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:}\PY{n}{raw\PYZus{}symbol}\PY{p}{[}\PY{l+m+mi}{1}\PY{o}{*}\PY{l+m+mi}{3}\PY{p}{]}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{base24}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:}\PY{n}{raw\PYZus{}symbol}\PY{p}{[}\PY{l+m+mi}{3}\PY{o}{*}\PY{l+m+mi}{3}\PY{p}{]}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{cabo}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:}\PY{n}{raw\PYZus{}symbol}\PY{p}{[}\PY{l+m+mi}{5}\PY{o}{*}\PY{l+m+mi}{3}\PY{p}{]}\PY{p}{,}
+              \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{arenaehr}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:}\PY{n}{raw\PYZus{}symbol}\PY{p}{[}\PY{l+m+mi}{6}\PY{o}{*}\PY{l+m+mi}{3}\PY{p}{]}\PY{p}{,}
+                    \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{eweave}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:}\PY{n}{raw\PYZus{}symbol}\PY{p}{[}\PY{l+m+mi}{7}\PY{o}{*}\PY{l+m+mi}{3}\PY{p}{]}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{ehrcare}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:}\PY{n}{raw\PYZus{}symbol}\PY{p}{[}\PY{l+m+mi}{8}\PY{o}{*}\PY{l+m+mi}{3}\PY{p}{]}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{clever}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:}\PY{n}{raw\PYZus{}symbol}\PY{p}{[}\PY{l+m+mi}{9}\PY{o}{*}\PY{l+m+mi}{3}\PY{p}{]}\PY{p}{,}
+              \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{ehrdb}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:}\PY{n}{raw\PYZus{}symbol}\PY{p}{[}\PY{l+m+mi}{11}\PY{o}{*}\PY{l+m+mi}{3}\PY{p}{]}\PY{p}{,}
+              \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{rhp}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:}\PY{n}{raw\PYZus{}symbol}\PY{p}{[}\PY{l+m+mi}{12}\PY{o}{*}\PY{l+m+mi}{3}\PY{p}{]}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{ehrn}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:}\PY{n}{raw\PYZus{}symbol}\PY{p}{[}\PY{l+m+mi}{13}\PY{o}{*}\PY{l+m+mi}{3}\PY{p}{]}\PY{p}{\PYZcb{}}
 
+
+
+
+\PY{n}{symbol\PYZus{}sequence}\PY{o}{=}\PY{p}{[}\PY{n}{raw\PYZus{}symbol}\PY{p}{[}\PY{l+m+mi}{25}\PY{o}{*}\PY{l+m+mi}{3}\PY{p}{]}\PY{p}{,}\PY{n}{raw\PYZus{}symbol}\PY{p}{[}\PY{l+m+mi}{27}\PY{o}{*}\PY{l+m+mi}{3}\PY{p}{]}\PY{p}{,}\PY{n}{raw\PYZus{}symbol}\PY{p}{[}\PY{l+m+mi}{6}\PY{o}{*}\PY{l+m+mi}{3}\PY{p}{]}\PY{p}{,}\PY{n}{raw\PYZus{}symbol}\PY{p}{[}\PY{l+m+mi}{5}\PY{o}{*}\PY{l+m+mi}{3}\PY{p}{]}\PY{p}{,}\PY{n}{raw\PYZus{}symbol}\PY{p}{[}\PY{l+m+mi}{31}\PY{o}{*}\PY{l+m+mi}{3}\PY{p}{]}\PY{p}{,}
+                \PY{n}{raw\PYZus{}symbol}\PY{p}{[}\PY{l+m+mi}{0}\PY{o}{*}\PY{l+m+mi}{3}\PY{p}{]}\PY{p}{,}\PY{n}{raw\PYZus{}symbol}\PY{p}{[}\PY{l+m+mi}{21}\PY{o}{*}\PY{l+m+mi}{3}\PY{p}{]}\PY{p}{,}\PY{n}{raw\PYZus{}symbol}\PY{p}{[}\PY{l+m+mi}{9}\PY{o}{*}\PY{l+m+mi}{3}\PY{p}{]}\PY{p}{,}\PY{n}{raw\PYZus{}symbol}\PY{p}{[}\PY{l+m+mi}{33}\PY{o}{*}\PY{l+m+mi}{3}\PY{p}{]}\PY{p}{,}\PY{n}{raw\PYZus{}symbol}\PY{p}{[}\PY{l+m+mi}{11}\PY{o}{*}\PY{l+m+mi}{3}\PY{p}{]}\PY{p}{,}
+                \PY{n}{raw\PYZus{}symbol}\PY{p}{[}\PY{l+m+mi}{29}\PY{o}{*}\PY{l+m+mi}{3}\PY{p}{]}\PY{p}{]}
+
+\PY{n}{dimensions}\PY{o}{=}\PY{n+nb}{range}\PY{p}{(}\PY{l+m+mi}{3}\PY{p}{)}
+
+\PY{c+c1}{\PYZsh{}size=11*[0.2]}
 
 \PY{n}{fig} \PY{o}{=} \PY{n}{px}\PY{o}{.}\PY{n}{scatter\PYZus{}matrix}\PY{p}{(}
     \PY{n}{df\PYZus{}famd}\PY{p}{,}
     \PY{n}{labels}\PY{o}{=}\PY{n}{labels}\PY{p}{,}
-    \PY{n}{dimensions}\PY{o}{=}\PY{n+nb}{range}\PY{p}{(}\PY{l+m+mi}{3}\PY{p}{)}\PY{p}{,}
+    \PY{n}{dimensions}\PY{o}{=}\PY{n}{dimensions}\PY{p}{,}
     \PY{n}{color\PYZus{}discrete\PYZus{}map}\PY{o}{=}\PY{n}{mycolor\PYZus{}discrete\PYZus{}map}\PY{p}{,}
-    \PY{n}{symbol\PYZus{}map}\PY{o}{=}\PY{n}{mysymbol\PYZus{}map}\PY{p}{,}
+    \PY{n}{symbol\PYZus{}sequence}\PY{o}{=}\PY{n}{symbol\PYZus{}sequence}\PY{p}{,}\PY{c+c1}{\PYZsh{}symbol\PYZus{}map=mysymbol\PYZus{}map,}
     \PY{n}{color}\PY{o}{=}\PY{n}{mycolors}\PY{p}{,}
+    \PY{c+c1}{\PYZsh{}size=size,}
     \PY{n}{symbol}\PY{o}{=}\PY{n}{mysymbols}
 \PY{p}{)}
 \PY{n}{fig}\PY{o}{.}\PY{n}{update\PYZus{}traces}\PY{p}{(}\PY{n}{diagonal\PYZus{}visible}\PY{o}{=}\PY{k+kc}{False}\PY{p}{)}
 \PY{n}{fig}\PY{o}{.}\PY{n}{show}\PY{p}{(}\PY{p}{)}
+\PY{c+c1}{\PYZsh{}fig.write\PYZus{}image(\PYZsq{}DimensionsReductionWithFAMD\PYZus{}2dprojections\PYZus{}1000dpi.pdf\PYZsq{},scale=2)}
+\PY{n}{fig}\PY{o}{.}\PY{n}{write\PYZus{}image}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{DimensionsReductionWithFAMD\PYZus{}2dprojections\PYZus{}1000dpi.jpeg}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{n}{scale}\PY{o}{=}\PY{l+m+mi}{8}\PY{p}{)}
 \end{Verbatim}
 \end{tcolorbox}
 
     
     
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{ }{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+
+\end{Verbatim}
+\end{tcolorbox}
+
 
     % Add a bibliography block to the postdoc
     
