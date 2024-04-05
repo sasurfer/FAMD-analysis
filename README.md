@@ -1,6 +1,13 @@
 # FAMD-analysis
 FAMD analysis of openEHR CDRs variables
 
+contents
+README: this file
+DimensionReductionWithFAMD.ipynb : jupyter notebook
+FAMD-Analysis.r : R script tested with RStudio
+SurveyAnswers.csv: input for both the notebook and the R script
+
+
 Configuration used in tests
 For python notebook
 Jupyter Notebook version 6.03
